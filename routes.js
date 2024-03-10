@@ -10,7 +10,7 @@ router.post("/send", (req, res) => {
     const requestBody = req.body;
     const { to, subject, text } = requestBody;
 
-    console.log("Sending email", to, subject, text, requestBody);
+    console.log("Sending email to: ", to, " subject: ", subject);
 
     const mailer = mailerBuilder({
         to,

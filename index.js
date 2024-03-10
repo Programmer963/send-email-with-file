@@ -1,7 +1,11 @@
+const dotenv = require("dotenv");
+dotenv.config();
+
 const express = require("express");
-const app = express();
 const router = require("./routes");
 const fileParser = require("express-multipart-file-parser");
+
+const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

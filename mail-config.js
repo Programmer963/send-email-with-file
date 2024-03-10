@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
-const user = process.env.SENDER_EMAIL;
-const pass = process.env.APP_PASSWORD;
+const user = process.env.SEWF_SENDER_EMAIL;
+const pass = process.env.SEWF_APP_PASSWORD;
 
 const transporter = nodemailer.createTransport({
     service: "Gmail",
