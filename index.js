@@ -16,7 +16,7 @@ app.use(fileParser);
 
 app.use(router);
 
-app.use(cors)
+app.use(cors())
 
 const port = process.env.PORT || 8080;
 
